@@ -5,9 +5,10 @@ function generateNumber() {
     const max = Math.floor (document.querySelector(".input-max").value)
 
     const result = Math.floor(Math.random() * (max - min + 1) + min);
-
-    alert (result)
-
+    
+    const inputElement = document.getElementById ("resultado");
+    
+    inputElement.value = result;
 }
 
 
